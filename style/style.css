@@ -142,7 +142,7 @@ text-align: center;
  .intro_btn {
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
  }
  .btn {
   width: 100%;
@@ -151,7 +151,6 @@ text-align: center;
   display: inline-block;
   vertical-align: top;
   padding: 20px 30px;
-  margin: 30px 125px 0 200px;
 
   border: 1px solid #fff;
   border-radius: 20px 20px 20px 0;
@@ -162,6 +161,7 @@ text-align: center;
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 20px 0 0 200px;
  }
  .btn:hover {
   background-color: #54f3f3c5;
