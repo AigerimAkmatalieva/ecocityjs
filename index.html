@@ -7,34 +7,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecocity</title>
   <link rel="stylesheet" href="./style/style.css">
+  <script src="./script.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
+
+  <nav class="navbar">
     <div class="container">
-      <div class="header_inner">
-        <div class="header_logo">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <a href="#" class="logo" id="logo">
           <img src="./assets/Logo.png" alt="">
-        </div>
-        <nav class="nav">
-          <a class="nav_link" href="#">Главная</a>
-          <a class="nav_link" href="#aboutus">О нас</a>
-          <a class="nav_link" href="#price">Цены</a>
-          <a class="nav_link" href="#service">Как пользоватся</a>
-        </nav>
-        <div class="header_button">
-          <a class="nav_link nav_padding" href="#footer">
-            Телефон техподдержки
-            <br />
-            <span>+996 500 583 000</span>
-          </a>
-          <a class="nav_link nav_border" href="#location">Бишкек</a>
-        </div>
+        </a>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#aboutus">О нас</a></li>
+          <li><a href="#price">Цена</a></li>
+          <li><a href="#service">Как пользоваться</a></li>
+          <li><a href="#phone"> Телефон 
+            <br>
+          +996 500 583 000</a></li>
+          <li><a class="nav_border" href="#location">Бишкек</a></li>
+        </ul>
       </div>
     </div>
-  </header>
-  <div class="intro">
+  </nav>
+  <div id="home" class="intro">
     <div class="container">
       <div class="intro_inner">
         <h1 class="intro_title">Удобная аренда велосипеда через мобильное приложение</h1>
@@ -59,7 +68,7 @@
   </div>
 
 
-  <div class="hero">
+  <div id="aboutus" class="hero">
     <div class="container">
       <h1>
         Уровень загрязнение воздуха в Бишкеке превышает допустимые показатели
@@ -102,7 +111,7 @@
   </div>
 
 
-  <div class="wrapper">
+  <div id="service" class="wrapper">
     <div class="container">
       <h1>С чего начать?</h1>
       <div class="row">
@@ -153,7 +162,7 @@
   </div>
 
 
-  <footer class="footer">
+  <footer id="phone" class="footer">
     <div class="container">
       <div class="footer_icons">
         <a href="#home"> <i class="bi-instagram"></i></a>
@@ -165,6 +174,7 @@
       <span>+996 500 583 000</span>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
